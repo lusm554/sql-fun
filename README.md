@@ -11,10 +11,11 @@ chmod +x run.sh
 Connect:
 ```
 chmod +x src/connect.sh
-./run.sh
+./src/connect.sh
 ```
 
 ## Prerequirements
 - psql
+- docker
 
 
