@@ -1,2 +1,5 @@
 # Files for another type of db 
 _scripts
+
+# Postgre db data
+pgdata
