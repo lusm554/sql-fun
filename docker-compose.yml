@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:14-alpine
+    container_name: sql_fun_postgres
+    environment:
+      POSTGRES_USER: postgres 
+      POSTGRES_PASSWORD: 123 
+      PGDATA: /var/lib/postgresql/data/pgdata
+      POSTGRES_DB: computer-company 
+    ports:
+      - 5432:5432
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data/pgdata
+      - ./.docker/setup.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - super_mega_harosh_network 
+
+volumes:
+  pgdata:
+
+networks:
+  super_mega_harosh_network:
+    driver: bridge
+
