@@ -4,7 +4,7 @@ Some sql practice
 ## How to use
 Make executable:
 ```shell
-chmod +x run.sh shutdown.sh src/connect.sh src/exec.sh
+chmod +x run.sh shutdown.sh src/connect.sh src/exec.sh .docker/setup.sh
 ```
 
 Run docker:
@@ -25,6 +25,11 @@ or
 ```shell
 # example
 ./exec.sh <(echo "select * from pc;")
+```
+
+Load default dbs:
+```shell
+./.docker/setup.sh
 ```
 
 ## Prerequirements
