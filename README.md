@@ -27,7 +27,7 @@ or
 ./exec.sh <(echo "select * from pc;")
 ```
 
-Load default dbs:
+Load default dbs(they are in `.docker/db_scripts`):
 ```shell
 ./.docker/setup.sh
 ```
